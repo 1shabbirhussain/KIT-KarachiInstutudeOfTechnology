@@ -1,0 +1,11 @@
+.box   {
+    background-color: red;
+    width: 33.3%;
+    height:100px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.box:nth-child(2){
+    background-color: blue;
+}
