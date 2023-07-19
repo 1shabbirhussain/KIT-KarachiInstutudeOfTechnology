@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h3{
+    margin-bottom: 10px ;
+    font-size: 2rem;
+}
+p{
+    margin-bottom: 10px;
+}
+.form{
+    height: 80vh;
+    /* overflow: auto; */
+    color: white;
+}
+.leftside{
+    width: 50vw;
+    height: auto;
+    /* overflow: hidden; */
+    background-color: #93CB52;
+    padding: 30px;
+}
+.leftside input{
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+}
+
+.leftside textarea{
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+.leftside label{
+    color: white;
+}
+button{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #333333;
+    color: white; 
+    height: 25px;
+}
+
+
+
+.parent{
+    width: 600px;
+    height: 100rem;
+    background-color: antiquewhite;
+    position: relative;
+}
+.child1{
+    width: 100px;
+    height: 60px;
+    background-color: #93CB52;
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+.child2{
+    width: 100px;
+    height: 60px;
+    background-color: #cbc152;
+    position: fixed;
+    top:20px;
+    left: 100px;
+}
+.child3{
+    width: 100px;
+    height: 60px;
+    background-color: #cb5252;
+    position: sticky;
+    top:40px;
+    left: 200px;
+}
+.child4{
+    width: 100px;
+    height: 60px;
+    background-color: #529fcb;
+    position: static;
+    top:10px;
+    left: 10px;
+}
+.child5{
+    width: 100px;
+    height: 60px;
+    background-color: #52cbc7;
+    position: relative;
+    top:10px;
+    left: 400px;
+}
