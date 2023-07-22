@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+   }
+ .container { 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 90vh;
+   flex-wrap: wrap;
+   align-items: center;
+
+   
+   } 
+ .container > div {
+   margin: 10px;
+   padding: 60px;
+   border-radius: 3px;
+   background: green;
+   transition: ease-in-out 0.1s;
+   outline: 2px solid black;
+
+ }
+ .container > div:nth-child(odd) {
+   flex-basis: 10%;
+   }
+ .container > div:nth-child(even) {
+   flex-basis: 20%;
+   }
+ .container > div:nth-child(2),
+ .container > div:nth-child(4),
+ .container > div:nth-child(9) {
+   flex-basis: 60%;
+   } 
+
+   .container > div:hover{
+    outline: 3px solid red;
+    background-color: rgba(0, 128, 0, 0.758);
+   }
