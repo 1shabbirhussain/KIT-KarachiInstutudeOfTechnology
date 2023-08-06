@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root {
     --panda: #E21B70;
     --gray: rgba(128, 128, 128, 0.25);
     --white: #ffffff;
     --text: #333333
 }
-
 * {
     padding: 0;
     margin: 0;
@@ -352,6 +352,7 @@ nav .icons .cart-icon {
 .cities .container .card img{
     width: 23rem;
     height: 27rem;
+    
 }
 .cities .container .card p{
     font-size: 2.5rem;
