@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+:root {
+    --panda: #E21B70;
+    --gray: rgba(128, 128, 128, 0.25);
+    --white: #ffffff;
+    --text: #333333
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.8%;
+}
+
+
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-flow: row wrap;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0px 4px 2px var(--gray);
+    background-color: var(--white);
+    z-index: 10;
+
+}
+
+nav .logo {
+    padding: 16px 24px;
+
+}
+
+nav .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .icons .user-wrapper,
+nav .icons .cart-icon {
+    padding: 1.6rem 2rem;
+    border-left: 1px solid var(--gray);
+}
+
+
+/* search container */
+
+.search-container {
+    background: url("images/hero-bg-xl.png");
+    background-size: 50% 100%, cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 90vh;
+}
+
+.search-flex {
+    margin: 0 10rem;
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+}
+
+.search-container .search-heading {
+    padding: 8rem 0 4.8rem;
+    margin-top: 15rem;
+}
+
+.search-container p {
+    font-weight: 300;
+    font-size: 4rem;
+    color: var(--text);
+}
+
+.search-container .search-box {
+    padding: 1rem 1rem 1rem 0;
+}
+
+.search-container button {
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 1.2rem 5.5rem;
+    height: 6.4rem;
+    margin: 1%;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--panda);
+    color: var(--white);
+}
+
+.search-container button:hover {
+    outline: 2px solid var(--panda);
+}
+
+.search-container input {
+    font-weight: 700;
+    font-size: 1.4rem;
+    border: 2px solid var(--gray);
+    border-radius: 0.5rem;
+    padding: 1.2rem 5.5rem 1.2rem 0.8rem;
+    height: 6.4rem;
+    width: 50%;
+    min-width: 16rem;
+}
+
+.search-container input:focus {
+    outline: 1px solid var(--text);
+
+}
+
+.search-container span {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+/* Get started container 1  ------- */
+
+.container-2 {
+    height: 90vh;
+}
+
+.container-2 h2 {
+    font-weight: 300;
+    font-size: 2.8rem;
+    margin: 2rem 10rem;
+}
+
+.container-2 .card-bg {
+    background: url("images/partner-bg.png");
+    background-position: center;
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100% 200%, contain;
+    position: relative;
+}
+
+.container-2 .card {
+    background-color: var(--white);
+    width: 60rem;
+    margin-left: 10rem;
+    padding: 3.2rem;
+    position: relative;
+    box-shadow: 0 0px 8px 2px var(--gray);
+    top: 20rem;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+}
+
+.container-2 .card h3 {
+    font-weight: 300;
+    font-size: 2.4rem;
+}
+
+.container-2 .card p {
+    margin-top: 1.5rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: var(--text);
+    line-height: 2.4rem;
+}
+
+.container-2 .card button {
+    background-color: var(--panda);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
+    padding: 1.2rem 5.5rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+   width: 40%;
+   align-self: self-end;
+
+}
+/* business container ------------ */
+.card-container3 .card-bg {
+    background: url("images/office-bg.png");
+    background-position: center;
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100% 200%, contain;
+    position: relative;
+}
+
+.card-container3 .card {
+  top: 30rem;
+}
+
+/* mobile container ----------- */
+.card-container2 .card-bg {
+    background: linear-gradient(0deg, var(--panda), var(--panda)), url("images/office-bg.png");
+    background-position: center;
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100% 200%, contain;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.card-container2 .card-bg .right {
+    width: 50%;
+    display: relative;
+}
+
+.card-container2 .card-bg .right img {
+    width: 100%;
+    height: 170%;
+    position: relative;
+    bottom: 10rem;
+    right: 0;
+}
+
+
+.card-container2 .card-bg .left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.card-container2 .card-bg .left .links3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+.card-container2 .card-bg .left .content {
+    width: 60rem;
+    margin-left: 10rem;
+    padding: 3.2rem 0;
+    color: var(--white);
+}
+
+.card-container2 .card-bg .left h3 {
+    font-weight: 300;
+    font-size: 2.4rem;
+}
+
+.card-container2 .card-bg .left p {
+    margin-top: 1.5rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+
+
+
+/* FAQ ----------------- */
+
+.FAQ {
+    margin-left: 10rem;
+    width: 80%;
+    text-align: justify;
+}
+
+.FAQ .heading {
+    font-size: 3.2rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+
+.FAQ .text {
+    margin-top: 1.5rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.FAQ .text>a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.FAQ .list {
+    list-style-type: none;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.FAQ .list>li {
+    width: 100%;
+    font-weight: 300;
+    line-height: 2.6rem;
+    font-size: 1.6rem;
+}
+
+.FAQ li>span {
+    color: var(--panda);
+}
+
+.FAQ .divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.201);
+    margin-top: 1.5rem;
+}
+
+.FAQ .sub-heading {
+    margin-top: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+}
+
+.FAQ .bold-text {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    line-height: 2.9rem;
+    font-size: 1.8rem;
+}
+
+.FAQ .indented {
+    padding-left: 2rem;
+}
+
+
+/* CITIES cards------------- */
+.cities{
+    margin: 0rem 10rem 5rem;
+
+}
+.cities h2 {
+    font-weight: 300;
+    font-size: 2.8rem;
+    margin: 2rem 0rem;
+}
+.cities .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.cities .container .card img{
+    width: 23rem;
+    height: 27rem;
+    
+}
+.cities .container .card p{
+    font-size: 2.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    position: relative;
+    bottom: 5rem;
+    left: 2rem;
+    text-shadow: 0 0 2px solid var(--gray);
+}

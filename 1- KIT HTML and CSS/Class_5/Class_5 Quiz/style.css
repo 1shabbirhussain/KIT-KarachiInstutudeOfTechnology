@@ -1,0 +1,100 @@
+:root{
+    --fb :#1877F2;
+    --white : whitesmoke;
+    --gray : #333333;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    font-size:62.8%;
+}
+
+
+body{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.header {
+    height: 10rem;
+    /* margin: 0; */
+    padding: 2rem 5rem;
+    background-color: var(--fb);
+    font-family:   Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+
+}
+
+.header img {
+    width: 30rem;
+}
+
+
+.header .logo {
+    float: left;
+}
+
+.header .signin {
+    float: right;
+}
+.signin input{
+    height: 2rem;
+    width: 25rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 2px solid rgba(34, 82, 255, 0.712);
+}
+.signin div{
+    float: left;
+    padding: 1rem;
+    /* margin: 0 ; */
+}
+
+.signin button{
+    padding: 0.5rem;
+    margin-top:10px ;
+}
+
+
+.content .left{
+width: 49%;
+float: left;
+}
+.content .right{
+    width: 49%;
+    float: right;
+    padding: 5%;
+}
+.left img{
+    margin-top: 10rem;
+}
+
+.content input{
+    height: 3.5rem;
+    width: 51rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    border: 2px solid rgba(128, 128, 128, 0.712);
+}
+form .name{
+    width: 25rem;
+}
+
+#r{
+    width: 10px;
+    height: 10px;
+}
+
+#submit{
+    width: 25rem;
+    align-items: center;
+    
+}
